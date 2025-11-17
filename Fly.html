@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Home Section -->
+    <div id="sectionHome">
+        <div class="bg-container d-flex flex-column justify-content-center">
+            <div class="tourism-card">
+                <h1 class="main-heading">Fly high</h1>
+                <p class="paragraph">Plan your trip where you want to fly.</p>
+                <button class="button" onclick="display('sectionFavouritePlaces')">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Section -->
+    <div id="sectionFavouritePlaces">
+        <div class="favourite-places-bg-container">
+            <div class="main-container text-center">
+
+                <input placeholder=" Enter the place name to search" type="search" class="search-input" id="searchInput" />
+
+                <div class="d-none" id="spinner">
+                    <div class="spinner-border" role="status"></div>
+                </div>
+
+                <div class="search-results" id="searchResults"></div>
+            </div>
+
+            <button class="btn btn-dark mt-4" onclick="display('sectionHome')">
+                Back
+            </button>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
